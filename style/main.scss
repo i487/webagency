@@ -1,0 +1,74 @@
+@import './component';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+    background: #FFA149;
+    border: none;
+    outline: none;
+    padding: 10px 32px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Mulish', sans-serif;
+}
+.container-xl {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.header {
+    background: #fcfcfc;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav {
+            display: flex;
+            align-items: center;
+            .nav-list {
+                display: flex;
+                gap: 60px;
+                align-items: center;
+                list-style-type: none;
+            }
+            &__link {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 170%;
+                color: #333333;
+            }
+            .burger {
+
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                &__line {
+                    width: 30px;
+                    height: 4px;
+                    background: black;
+                }
+            }
+            .burger {
+                display: none;
+            }
+        }
+    }
+
+}
