@@ -87,6 +87,9 @@
 }
 
 .switch {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     &__btn {
         cursor: pointer;
         transition: 0.5s;
@@ -123,6 +126,8 @@
 }
 
 .testimonial-card {
+    max-width: 500px;
+    height: 280px;
     padding: 40px 24px;
     background: white;
     border: 1px solid #DDDDDD;
@@ -132,8 +137,17 @@
     gap: 50px;
     cursor: pointer;
     transition: 0.5s;
+    margin-right: 30px;
+
     &:hover {
         border: 1px solid #FFA149;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 170%;
+        color: #333333;
+        margin-bottom: 50px;
     }
 }
 
@@ -210,6 +224,7 @@
         }
     }
     &__btn {
+        width: 100%;
         font-weight: bold;
         font-size: 16px;
         line-height: 170%;
