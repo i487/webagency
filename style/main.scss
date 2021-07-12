@@ -113,7 +113,7 @@
         display: grid;
         grid-template-columns: 40% 50%;
         grid-gap: 118px;
-        padding: 150px 0 100px;
+        padding: 150px 15px 100px;
         align-items: center;
     }
 
@@ -181,6 +181,7 @@
     }
 
     .categories {
+        position: absolute;
         .dot-top {
             position: absolute;
             top: -90px;
@@ -315,8 +316,9 @@
     }
 
     &__members {
-        display: flex;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
         .team__member {
             transition: 0.5s ease-in-out;
             cursor: pointer;
@@ -522,10 +524,7 @@
 
 
 // X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
     .header {
         display: contents;
 
@@ -535,19 +534,16 @@
             .nav {
                 .nav-list {
                     z-index: 3;
-                    box-shadow: 0px 0px 20px 20px #f6f6f6e3;
-                    margin: 36px;
-                    width: 90%;
-                    opacity: 0.8;
+                    width: 85%;
                     padding: 80px 0 50px;
                     position: absolute;
                     top: 0;
-                    left: -800px;
+                    left: -100%;
                     display: flex;
                     gap: 60px;
                     flex-direction: column;
                     list-style-type: none;
-                    background: #dad6d48a;
+                    background: #FFFFFF;
 
                 }
 
@@ -564,6 +560,218 @@
                     top: 10%;
                     right: 15%;
                 }
+                
+            }
+        }
+
+    }
+    .intro {
+        &__container {
+            text-align: center;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 50px 15px;
+        }
+        .inputs {
+            position: inherit;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    .website-for-all {
+        text-align: left;
+        &__title {
+            font-size: 28px;
+        }
+        &__context {
+            width: 100%;
+        }
+        .categories {
+            position: inherit;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            .dot {
+                display: none;
+            }
+        }
+
+    }
+    .features {
+        padding: 100px 0;
+        &__title {
+            font-size: 28px;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__table {
+            border: none;
+            &-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .card {
+                border: 1px solid #FFA149;
+            }
+            &-row:not(:last-child) {
+                border-bottom: none;
+            }
+    
+            &-data:not(:last-child) {
+                border-right: none;
+            }
+        }
+    }
+    .testimonial {
+        &__title {
+            font-size: 28px;
+        }
+        &__cards {
+            display: flex;
+            flex-direction: row;
+            margin-left: 15px;
+            
+        }
+        &-card {
+            width: 360px !important;
+            margin-right: 0 15px;
+        }
+    }
+    .team {
+        padding: 50px 0;
+        &__title {
+            font-size: 28px;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__members {
+            grid-template-columns: 1fr;
+        }
+    }
+    .pricing {
+        padding: 50px 0;
+        &__title {
+            font-size: 28px;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__plans {
+            display: flex !important;
+            flex-direction: row !important;
+            .slick-track {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        &-plan {
+            width: 360px !important;
+        }
+
+    }
+    .clients {
+        padding: 50px 0;
+        &__title {
+            font-size: 28px;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__logo {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+        }
+    }
+    .start-business {
+        padding: 60px 0;
+    
+        &__container {
+            padding: 0 15px;
+    
+            .inputs {
+                padding-right: 20px;
+                position: inherit;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &__btn_m {
+                    margin: 10px 30px;
+                }
+            }
+        }
+    
+        &__title {
+            font-size: 28px;
+            margin-bottom: 48px;
+        }
+    }
+    .footer {
+        padding: 40px 0;
+        text-align: center;
+    
+        &__content {
+            padding: 50px 0 90px;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+    
+        &__logo {
+            gap: 20px;
+        }
+    
+        &__list {
+            .first-item {
+                margin-bottom: 24px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .header {
+        display: contents;
+
+        &-wrapper {
+            padding: 20px 0;
+
+            .nav {
+                .nav-list {
+                    z-index: 3;
+                    width: 85%;
+                    padding: 80px 0 50px;
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    display: flex;
+                    gap: 60px;
+                    flex-direction: column;
+                    list-style-type: none;
+                    background: #FFFFFF;
+
+                }
+
+                .burger {
+                    display: flex;
+                }
+
+                .close-btn {
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    display: block;
+                    position: absolute;
+                    top: 10%;
+                    right: 15%;
+                }
+                
             }
         }
 

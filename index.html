@@ -59,10 +59,13 @@
                         <li class="nav-list__item">
                             <a href="#" class="nav__link">Contact</a>
                         </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav__link">
+                                <button class="btn">Order now</button>
+                            </a>
+                        </li>
                     </ul>
-                    <a href="#" class="nav__link">
-                        <button class="btn">Order now</button>
-                    </a>
+                    
                     <div class="burger" onclick="showMenu()">
                         <div class="burger__line"></div>
                         <div class="burger__line"></div>
@@ -83,16 +86,16 @@
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                     the blind texts.
                 </p>
-                <div class="inputs inputs_position_abs">
+                <form class="inputs inputs_position_abs">
                     <input type="text" class="inputs__item" placeholder="Enter Name">
-                    <button class="inputs__btn">Website Type
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
+                    <select class="inputs__btn">Website Type
+                        <option value="Website type">Website type</option>
+                        <option value="Website type">Marketing</option>
+                        <option value="Website type">E-shopping</option>
+                        <option value="Website type">Education</option>
+                    </select>
                     <button class="btn inputs__btn_m">Get started</button>
-                </div>
+                </form>
             </div>
             <div class="intro__images">
                 <img src="./img/bro-picture.png" alt="" class="intro__images-item">
@@ -118,7 +121,7 @@
                     </p>
                 </div>
                 <div class="categories categories_position_abs">
-                    <div class="dot-top">
+                    <div class="dot dot-top">
                         <svg width="92" height="102" viewBox="0 0 92 102" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="1" cy="1" r="1" fill="#DDDDDD" />
@@ -358,7 +361,7 @@
 
                         <h3 class="categories__item-text">See more ...</h3>
                     </div>
-                    <div class="dot-bottom">
+                    <div class="dot dot-bottom">
                         <svg width="92" height="102" viewBox="0 0 92 102" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="1" cy="1" r="1" fill="#DDDDDD" />
@@ -492,111 +495,255 @@
                 The following is service you get:
             </p>
             <table class="features__table">
-                <tr class="features__table-row">
-                    <td class="features__table-data">
-                        <div class="card">
-                            <div class="card__logo">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
-                                    <path
-                                        d="M38.6667 48.0001H41.3334V45.3334H38.6667V48.0001ZM40.0001 26.6667C32.6401 26.6667 26.6667 32.6401 26.6667 40.0001C26.6667 47.3601 32.6401 53.3334 40.0001 53.3334C47.3601 53.3334 53.3334 47.3601 53.3334 40.0001C53.3334 32.6401 47.3601 26.6667 40.0001 26.6667ZM40.0001 50.6667C34.1201 50.6667 29.3334 45.8801 29.3334 40.0001C29.3334 34.1201 34.1201 29.3334 40.0001 29.3334C45.8801 29.3334 50.6667 34.1201 50.6667 40.0001C50.6667 45.8801 45.8801 50.6667 40.0001 50.6667ZM40.0001 32.0001C37.0534 32.0001 34.6667 34.3867 34.6667 37.3334H37.3334C37.3334 35.8667 38.5334 34.6667 40.0001 34.6667C41.4667 34.6667 42.6667 35.8667 42.6667 37.3334C42.6667 40.0001 38.6667 39.6667 38.6667 44.0001H41.3334C41.3334 41.0001 45.3334 40.6667 45.3334 37.3334C45.3334 34.3867 42.9467 32.0001 40.0001 32.0001Z"
-                                        fill="#FFA049"></path>
-                                </svg>
+                <tbody>
+                    <tr class="features__table-row">
+                        <td class="features__table-data">
+                            <div class="card">
+                                <div class="card__logo">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
+                                        <path
+                                            d="M38.6667 48.0001H41.3334V45.3334H38.6667V48.0001ZM40.0001 26.6667C32.6401 26.6667 26.6667 32.6401 26.6667 40.0001C26.6667 47.3601 32.6401 53.3334 40.0001 53.3334C47.3601 53.3334 53.3334 47.3601 53.3334 40.0001C53.3334 32.6401 47.3601 26.6667 40.0001 26.6667ZM40.0001 50.6667C34.1201 50.6667 29.3334 45.8801 29.3334 40.0001C29.3334 34.1201 34.1201 29.3334 40.0001 29.3334C45.8801 29.3334 50.6667 34.1201 50.6667 40.0001C50.6667 45.8801 45.8801 50.6667 40.0001 50.6667ZM40.0001 32.0001C37.0534 32.0001 34.6667 34.3867 34.6667 37.3334H37.3334C37.3334 35.8667 38.5334 34.6667 40.0001 34.6667C41.4667 34.6667 42.6667 35.8667 42.6667 37.3334C42.6667 40.0001 38.6667 39.6667 38.6667 44.0001H41.3334C41.3334 41.0001 45.3334 40.6667 45.3334 37.3334C45.3334 34.3867 42.9467 32.0001 40.0001 32.0001Z"
+                                            fill="#FFA049"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="card__title">
+                                    Free Support
+                                </h4>
+                                <p class="card__text">
+                                    We provide all technical support for your website during its active period.
+                                </p>
                             </div>
-                            <h4 class="card__title">
-                                Free Support
-                            </h4>
-                            <p class="card__text">
-                                We provide all technical support for your website during its active period.
-                            </p>
-                        </div>
-                    </td>
-                    <td class="features__table-data">
-                        <div class="card">
-                            <div class="card__logo">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.33333 7.99992H29.3333V5.33325H5.33333C3.86667 5.33325 2.66667 6.53325 2.66667 7.99992V22.6666H0V26.6666H18.6667V22.6666H5.33333V7.99992ZM30.6667 10.6666H22.6667C21.9333 10.6666 21.3333 11.2666 21.3333 11.9999V25.3333C21.3333 26.0666 21.9333 26.6666 22.6667 26.6666H30.6667C31.4 26.6666 32 26.0666 32 25.3333V11.9999C32 11.2666 31.4 10.6666 30.6667 10.6666ZM29.3333 22.6666H24V13.3333H29.3333V22.6666Z"
-                                        fill="#FFA149" />
-                                </svg>
+                        </td>
+                        <td class="features__table-data">
+                            <div class="card">
+                                <div class="card__logo">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.33333 7.99992H29.3333V5.33325H5.33333C3.86667 5.33325 2.66667 6.53325 2.66667 7.99992V22.6666H0V26.6666H18.6667V22.6666H5.33333V7.99992ZM30.6667 10.6666H22.6667C21.9333 10.6666 21.3333 11.2666 21.3333 11.9999V25.3333C21.3333 26.0666 21.9333 26.6666 22.6667 26.6666H30.6667C31.4 26.6666 32 26.0666 32 25.3333V11.9999C32 11.2666 31.4 10.6666 30.6667 10.6666ZM29.3333 22.6666H24V13.3333H29.3333V22.6666Z"
+                                            fill="#FFA149" />
+                                    </svg>
+                                </div>
+                                <h4 class="card__title">
+                                    Mobile respopnsive
+                                </h4>
+                                <p class="card__text">
+                                    We provide all technical support for your website during its active period.
+                                </p>
                             </div>
-                            <h4 class="card__title">
-                                Mobile respopnsive
-                            </h4>
-                            <p class="card__text">
-                                We provide all technical support for your website during its active period.
-                            </p>
-                        </div>
-                    </td>
-                    <td class="features__table-data">
-                        <div class="card">
-                            <div class="card__logo">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
-                                    <path
-                                        d="M39.9867 26.6667C32.6267 26.6667 26.6667 32.6401 26.6667 40.0001C26.6667 47.3601 32.6267 53.3334 39.9867 53.3334C47.3601 53.3334 53.3334 47.3601 53.3334 40.0001C53.3334 32.6401 47.3601 26.6667 39.9867 26.6667ZM49.2267 34.6667H45.2934C44.8667 33.0001 44.2534 31.4001 43.4534 29.9201C45.9067 30.7601 47.9467 32.4667 49.2267 34.6667ZM40.0001 29.3867C41.1067 30.9867 41.9734 32.7601 42.5467 34.6667H37.4534C38.0267 32.7601 38.8934 30.9867 40.0001 29.3867ZM29.6801 42.6667C29.4667 41.8134 29.3334 40.9201 29.3334 40.0001C29.3334 39.0801 29.4667 38.1867 29.6801 37.3334H34.1867C34.0801 38.2134 34.0001 39.0934 34.0001 40.0001C34.0001 40.9067 34.0801 41.7867 34.1867 42.6667H29.6801ZM30.7734 45.3334H34.7067C35.1334 47.0001 35.7467 48.6001 36.5467 50.0801C34.0934 49.2401 32.0534 47.5467 30.7734 45.3334ZM34.7067 34.6667H30.7734C32.0534 32.4534 34.0934 30.7601 36.5467 29.9201C35.7467 31.4001 35.1334 33.0001 34.7067 34.6667ZM40.0001 50.6134C38.8934 49.0134 38.0267 47.2401 37.4534 45.3334H42.5467C41.9734 47.2401 41.1067 49.0134 40.0001 50.6134ZM43.1201 42.6667H36.8801C36.7601 41.7867 36.6667 40.9067 36.6667 40.0001C36.6667 39.0934 36.7601 38.2001 36.8801 37.3334H43.1201C43.2401 38.2001 43.3334 39.0934 43.3334 40.0001C43.3334 40.9067 43.2401 41.7867 43.1201 42.6667ZM43.4534 50.0801C44.2534 48.6001 44.8667 47.0001 45.2934 45.3334H49.2267C47.9467 47.5334 45.9067 49.2401 43.4534 50.0801ZM45.8134 42.6667C45.9201 41.7867 46.0001 40.9067 46.0001 40.0001C46.0001 39.0934 45.9201 38.2134 45.8134 37.3334H50.3201C50.5334 38.1867 50.6667 39.0801 50.6667 40.0001C50.6667 40.9201 50.5334 41.8134 50.3201 42.6667H45.8134Z"
-                                        fill="#FFA049"></path>
-                                </svg>
+                        </td>
+                        <td class="features__table-data">
+                            <div class="card">
+                                <div class="card__logo">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
+                                        <path
+                                            d="M39.9867 26.6667C32.6267 26.6667 26.6667 32.6401 26.6667 40.0001C26.6667 47.3601 32.6267 53.3334 39.9867 53.3334C47.3601 53.3334 53.3334 47.3601 53.3334 40.0001C53.3334 32.6401 47.3601 26.6667 39.9867 26.6667ZM49.2267 34.6667H45.2934C44.8667 33.0001 44.2534 31.4001 43.4534 29.9201C45.9067 30.7601 47.9467 32.4667 49.2267 34.6667ZM40.0001 29.3867C41.1067 30.9867 41.9734 32.7601 42.5467 34.6667H37.4534C38.0267 32.7601 38.8934 30.9867 40.0001 29.3867ZM29.6801 42.6667C29.4667 41.8134 29.3334 40.9201 29.3334 40.0001C29.3334 39.0801 29.4667 38.1867 29.6801 37.3334H34.1867C34.0801 38.2134 34.0001 39.0934 34.0001 40.0001C34.0001 40.9067 34.0801 41.7867 34.1867 42.6667H29.6801ZM30.7734 45.3334H34.7067C35.1334 47.0001 35.7467 48.6001 36.5467 50.0801C34.0934 49.2401 32.0534 47.5467 30.7734 45.3334ZM34.7067 34.6667H30.7734C32.0534 32.4534 34.0934 30.7601 36.5467 29.9201C35.7467 31.4001 35.1334 33.0001 34.7067 34.6667ZM40.0001 50.6134C38.8934 49.0134 38.0267 47.2401 37.4534 45.3334H42.5467C41.9734 47.2401 41.1067 49.0134 40.0001 50.6134ZM43.1201 42.6667H36.8801C36.7601 41.7867 36.6667 40.9067 36.6667 40.0001C36.6667 39.0934 36.7601 38.2001 36.8801 37.3334H43.1201C43.2401 38.2001 43.3334 39.0934 43.3334 40.0001C43.3334 40.9067 43.2401 41.7867 43.1201 42.6667ZM43.4534 50.0801C44.2534 48.6001 44.8667 47.0001 45.2934 45.3334H49.2267C47.9467 47.5334 45.9067 49.2401 43.4534 50.0801ZM45.8134 42.6667C45.9201 41.7867 46.0001 40.9067 46.0001 40.0001C46.0001 39.0934 45.9201 38.2134 45.8134 37.3334H50.3201C50.5334 38.1867 50.6667 39.0801 50.6667 40.0001C50.6667 40.9201 50.5334 41.8134 50.3201 42.6667H45.8134Z"
+                                            fill="#FFA049"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="card__title">
+                                    Domain & Hosting
+                                </h4>
+                                <p class="card__text">
+                                    We provide all technical support for your website during its active period.
+                                </p>
                             </div>
-                            <h4 class="card__title">
-                                Domain & Hosting
-                            </h4>
-                            <p class="card__text">
-                                We provide all technical support for your website during its active period.
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="features__table-row">
-                    <td class="features__table-data">
-                        <div class="card">
-                            <div class="card__logo">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
-                                    <path
-                                        d="M44.6667 42.6667H43.6133L43.24 42.3067C44.5467 40.7867 45.3333 38.8133 45.3333 36.6667C45.3333 31.88 41.4533 28 36.6667 28C31.88 28 28 31.88 28 36.6667C28 41.4533 31.88 45.3333 36.6667 45.3333C38.8133 45.3333 40.7867 44.5467 42.3067 43.24L42.6667 43.6133V44.6667L49.3333 51.32L51.32 49.3333L44.6667 42.6667ZM36.6667 42.6667C33.3467 42.6667 30.6667 39.9867 30.6667 36.6667C30.6667 33.3467 33.3467 30.6667 36.6667 30.6667C39.9867 30.6667 42.6667 33.3467 42.6667 36.6667C42.6667 39.9867 39.9867 42.6667 36.6667 42.6667Z"
-                                        fill="#FFA049"></path>
-                                </svg>
+                        </td>
+                    </tr>
+                    <tr class="features__table-row">
+                        <td class="features__table-data">
+                            <div class="card">
+                                <div class="card__logo">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
+                                        <path
+                                            d="M44.6667 42.6667H43.6133L43.24 42.3067C44.5467 40.7867 45.3333 38.8133 45.3333 36.6667C45.3333 31.88 41.4533 28 36.6667 28C31.88 28 28 31.88 28 36.6667C28 41.4533 31.88 45.3333 36.6667 45.3333C38.8133 45.3333 40.7867 44.5467 42.3067 43.24L42.6667 43.6133V44.6667L49.3333 51.32L51.32 49.3333L44.6667 42.6667ZM36.6667 42.6667C33.3467 42.6667 30.6667 39.9867 30.6667 36.6667C30.6667 33.3467 33.3467 30.6667 36.6667 30.6667C39.9867 30.6667 42.6667 33.3467 42.6667 36.6667C42.6667 39.9867 39.9867 42.6667 36.6667 42.6667Z"
+                                            fill="#FFA049"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="card__title">
+                                    Easy to find
+                                </h4>
+                                <p class="card__text">
+                                    We provide all technical support for your website during its active period.
+                                </p>
                             </div>
-                            <h4 class="card__title">
-                                Easy to find
-                            </h4>
-                            <p class="card__text">
-                                We provide all technical support for your website during its active period.
-                            </p>
-                        </div>
-                    </td>
-                    <td class="features__table-data">
-                        <div class="card">
-                            <div class="card__logo">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
-                                    <path
-                                        d="M51.96 33.6934C52.48 33.1734 52.48 32.3334 51.96 31.8134L48.1867 28.04C47.6667 27.52 46.8267 27.52 46.3067 28.04L40.32 34.0267L35.1333 28.84C34.0933 27.8 32.4 27.8 31.36 28.84L28.8267 31.3734C27.7867 32.4134 27.7867 34.1067 28.8267 35.1467L34.0133 40.3334L28 46.3467V52H33.6533L39.68 45.9734L44.8667 51.16C46.1333 52.4267 47.84 51.96 48.64 51.16L51.1733 48.6267C52.2133 47.5867 52.2133 45.8934 51.1733 44.8534L45.9867 39.6667L51.96 33.6934ZM30.72 33.2534L33.24 30.72L34.9333 32.4134L33.36 34L35.24 35.88L36.8267 34.2934L38.4267 35.8934L35.8933 38.4267L30.72 33.2534ZM45.6933 43.1734L44.1067 44.76L45.9867 46.64L47.5733 45.0534L49.2667 46.7467L46.7333 49.28L41.5467 44.0934L44.08 41.56L45.6933 43.1734ZM32.5467 49.3334H30.6667V47.4534L43.48 34.64L45.2133 36.3734L45.36 36.52L32.5467 49.3334ZM45.36 32.7467L47.24 30.8667L49.12 32.7467L47.24 34.6267L45.36 32.7467Z"
-                                        fill="#FFA049"></path>
-                                </svg>
+                        </td>
+                        <td class="features__table-data">
+                            <div class="card">
+                                <div class="card__logo">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle opacity="0.1" cx="40" cy="40" r="40" fill="#FFA149"></circle>
+                                        <path
+                                            d="M51.96 33.6934C52.48 33.1734 52.48 32.3334 51.96 31.8134L48.1867 28.04C47.6667 27.52 46.8267 27.52 46.3067 28.04L40.32 34.0267L35.1333 28.84C34.0933 27.8 32.4 27.8 31.36 28.84L28.8267 31.3734C27.7867 32.4134 27.7867 34.1067 28.8267 35.1467L34.0133 40.3334L28 46.3467V52H33.6533L39.68 45.9734L44.8667 51.16C46.1333 52.4267 47.84 51.96 48.64 51.16L51.1733 48.6267C52.2133 47.5867 52.2133 45.8934 51.1733 44.8534L45.9867 39.6667L51.96 33.6934ZM30.72 33.2534L33.24 30.72L34.9333 32.4134L33.36 34L35.24 35.88L36.8267 34.2934L38.4267 35.8934L35.8933 38.4267L30.72 33.2534ZM45.6933 43.1734L44.1067 44.76L45.9867 46.64L47.5733 45.0534L49.2667 46.7467L46.7333 49.28L41.5467 44.0934L44.08 41.56L45.6933 43.1734ZM32.5467 49.3334H30.6667V47.4534L43.48 34.64L45.2133 36.3734L45.36 36.52L32.5467 49.3334ZM45.36 32.7467L47.24 30.8667L49.12 32.7467L47.24 34.6267L45.36 32.7467Z"
+                                            fill="#FFA049"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="card__title">
+                                    Design Choices
+                                </h4>
+                                <p class="card__text">
+                                    We provide all technical support for your website during its active period.
+                                </p>
                             </div>
-                            <h4 class="card__title">
-                                Design Choices
-                            </h4>
-                            <p class="card__text">
-                                We provide all technical support for your website during its active period.
-                            </p>
-                        </div>
-                    </td>
-                    <td class="features__table-data">
-
-                    </td>
-                </tr>
+                        </td>
+                        <td class="features__table-data">
+    
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
     </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <h5 class="testimonial__heading">
+                Testimonials
+            </h5>
+            <div class="testimonial__item">
+                <h2 class="testimonial__title">
+                    What are they saying?
+                </h2>
+                <div class="switch">
+                    <svg class="switch__btn left-arrow slick-arrow" width="46" height="46" viewBox="0 0 46 46"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="23" cy="23" r="23" fill="#DDDDDD" />
+                        <path d="M30 23H16" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M23 16L16 23L23 30" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg class="switch__btn right-arrow slick-arrow" width="46" height="46" viewBox="0 0 46 46"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="23" cy="23" r="23" fill="#DDDDDD" />
+                        <path d="M16 23H30" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M23 16L30 23L23 30" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial__cards slider">
+            <div class="testimonial-card">
+                <p class="testimonial-card__text">
+                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
+                    purchased. We can't understand how we've been living without it."
+                </p>
+                <div class="bloger">
+                    <img src="./img/Photo.png" alt="">
+                    <div class="bloger__item">
+                        <h4 class="bloger__name">
+                            Jerome Bell
+                        </h4>
+                        <p class="bloger__job">
+                            Doctor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-card__text">
+                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
+                    purchased. We can't understand how we've been living without it."
+                </p>
+                <div class="bloger">
+                    <img src="./img/Photo.png" alt="">
+                    <div class="bloger__item">
+                        <h4 class="bloger__name">
+                            Jerome Bell
+                        </h4>
+                        <p class="bloger__job">
+                            Doctor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-card__text">
+                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
+                    purchased. We can't understand how we've been living without it."
+                </p>
+                <div class="bloger">
+                    <img src="./img/Photo.png" alt="">
+                    <div class="bloger__item">
+                        <h4 class="bloger__name">
+                            Jerome Bell
+                        </h4>
+                        <p class="bloger__job">
+                            Doctor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-card__text">
+                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
+                    purchased. We can't understand how we've been living without it."
+                </p>
+                <div class="bloger">
+                    <img src="./img/Photo.png" alt="">
+                    <div class="bloger__item">
+                        <h4 class="bloger__name">
+                            Jerome Bell
+                        </h4>
+                        <p class="bloger__job">
+                            Doctor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-card__text">
+                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
+                    purchased. We can't understand how we've been living without it."
+                </p>
+                <div class="bloger">
+                    <img src="./img/Photo.png" alt="">
+                    <div class="bloger__item">
+                        <h4 class="bloger__name">
+                            Jerome Bell
+                        </h4>
+                        <p class="bloger__job">
+                            Doctor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-card__text">
+                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
+                    purchased. We can't understand how we've been living without it."
+                </p>
+                <div class="bloger">
+                    <img src="./img/Photo.png" alt="">
+                    <div class="bloger__item">
+                        <h4 class="bloger__name">
+                            Jerome Bell
+                        </h4>
+                        <p class="bloger__job">
+                            Doctor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="team">
         <div class="container">
@@ -950,147 +1097,7 @@
         </div>
     </section>
     
-    <section class="testimonial">
-        <div class="container">
-            <h5 class="testimonial__heading">
-                Testimonials
-            </h5>
-            <div class="testimonial__item">
-                <h2 class="testimonial__title">
-                    What are they saying?
-                </h2>
-                <div class="switch">
-                    <svg class="switch__btn left-arrow slick-arrow" width="46" height="46" viewBox="0 0 46 46"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="23" cy="23" r="23" fill="#DDDDDD" />
-                        <path d="M30 23H16" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M23 16L16 23L23 30" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                    <svg class="switch__btn right-arrow slick-arrow" width="46" height="46" viewBox="0 0 46 46"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="23" cy="23" r="23" fill="#DDDDDD" />
-                        <path d="M16 23H30" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M23 16L30 23L23 30" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-
-        <div class="testimonial__cards slider">
-            <div class="testimonial-card">
-                <p class="testimonial-card__text">
-                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
-                    purchased. We can't understand how we've been living without it."
-                </p>
-                <div class="bloger">
-                    <img src="./img/Photo.png" alt="">
-                    <div class="bloger__item">
-                        <h4 class="bloger__name">
-                            Jerome Bell
-                        </h4>
-                        <p class="bloger__job">
-                            Doctor
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-card__text">
-                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
-                    purchased. We can't understand how we've been living without it."
-                </p>
-                <div class="bloger">
-                    <img src="./img/Photo.png" alt="">
-                    <div class="bloger__item">
-                        <h4 class="bloger__name">
-                            Jerome Bell
-                        </h4>
-                        <p class="bloger__job">
-                            Doctor
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-card__text">
-                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
-                    purchased. We can't understand how we've been living without it."
-                </p>
-                <div class="bloger">
-                    <img src="./img/Photo.png" alt="">
-                    <div class="bloger__item">
-                        <h4 class="bloger__name">
-                            Jerome Bell
-                        </h4>
-                        <p class="bloger__job">
-                            Doctor
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-card__text">
-                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
-                    purchased. We can't understand how we've been living without it."
-                </p>
-                <div class="bloger">
-                    <img src="./img/Photo.png" alt="">
-                    <div class="bloger__item">
-                        <h4 class="bloger__name">
-                            Jerome Bell
-                        </h4>
-                        <p class="bloger__job">
-                            Doctor
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-card__text">
-                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
-                    purchased. We can't understand how we've been living without it."
-                </p>
-                <div class="bloger">
-                    <img src="./img/Photo.png" alt="">
-                    <div class="bloger__item">
-                        <h4 class="bloger__name">
-                            Jerome Bell
-                        </h4>
-                        <p class="bloger__job">
-                            Doctor
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-card__text">
-                    "Wow what great service, I love it! It's is the most valuable business resource we have EVER
-                    purchased. We can't understand how we've been living without it."
-                </p>
-                <div class="bloger">
-                    <img src="./img/Photo.png" alt="">
-                    <div class="bloger__item">
-                        <h4 class="bloger__name">
-                            Jerome Bell
-                        </h4>
-                        <p class="bloger__job">
-                            Doctor
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
 
     <section class="start-business">
         <div class="container start-business__container">
@@ -1099,12 +1106,12 @@
             </h2>
             <div class="inputs">
                 <input type="text" class="inputs__item" placeholder="Enter Name">
-                <button class="inputs__btn">Website Type
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L12 15L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
+                <select class="inputs__btn">Website Type
+                    <option value="Website type">Website type</option>
+                    <option value="Website type">Marketing</option>
+                    <option value="Website type">E-shopping</option>
+                    <option value="Website type">Education</option>
+                </select>
                 <button class="btn inputs__btn_m">Get started</button>
             </div>
         </div>
@@ -1209,24 +1216,26 @@
             responsive: [{
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToShow: 1.2,
+                        slidesToScroll: 1,
+                        dots: false
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
@@ -1239,10 +1248,9 @@
     <script type="text/javascript">
         $('.pricing-slider').slick({
             dots: false,
-
             infinite: true,
             speed: 300,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             responsive: [{
                     breakpoint: 1024,
@@ -1250,21 +1258,23 @@
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
+                        slidesToShow: 1.2,
+                        slidesToScroll: 1,
+                        dots: false
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots: false
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
@@ -1285,7 +1295,6 @@
             navbar.style.left = '-800px'
         }
     </script>
-
 </body>
 
 </html>
